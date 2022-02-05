@@ -6,7 +6,7 @@ let count = 0;
     setTimeout(() => {
         process.stdout.write(char);
         count++;
-        if(count === sentence.length) console.log('\n');
+        if(count === sentence.length) process.stdout.write('\n');
       }, delay);
     delay += 60;
   }
